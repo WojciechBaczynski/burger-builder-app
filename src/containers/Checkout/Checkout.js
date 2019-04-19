@@ -9,7 +9,16 @@ class Checkout extends Component {
             bacon: 1,
             cheese: 1
         }
-    }
+    };
+
+    componentDidMount() {
+        const query = new URLSearchParams(this.props.location.search);
+        const ingredients = {};
+        for (let param of query.entries()) {
+            ingredients[param[0]] = +param[1];
+        }
+        this.setState({ ingredients: ingredients });
+    };
 
     onCheckoutCancelled = () => {
         this.props.history.goBack();
@@ -28,7 +37,7 @@ class Checkout extends Component {
                     ingredients={this.state.ingredients} />
             </div>
         );
-    }
+    };
 }
 
 export default Checkout;
