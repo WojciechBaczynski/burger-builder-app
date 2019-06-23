@@ -1,0 +1,6 @@
+projectKey=burger-builder-app
+serverUrl=http://localhost:1333
+serverVersion=7.8.0.26217
+dashboardUrl=http://localhost:1333/dashboard?id=burger-builder-app
+ceTaskId=AWt1yKeJEXF6kh-mhHaD
+ceTaskUrl=http://localhost:1333/api/ce/task?id=AWt1yKeJEXF6kh-mhHaD
