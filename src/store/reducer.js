@@ -26,6 +26,7 @@ const Reducer = (state = initialState, action) => {
                 ingredients: {
                     ...state.ingredients,
                     [action.ingredientName]: state.ingredients[action.ingredientName] - 1
+                }
             }
         default:
             return state
