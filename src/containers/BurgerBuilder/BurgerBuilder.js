@@ -90,8 +90,8 @@ class BurgerBuilder extends Component {
         /*
         this.setState({ loading: true });
         const order = {
-            ingredients: this.state.ingredients,
-            price: this.state.totalPrice,
+            ingredients: this.store.ingredients,
+            price: this.store.totalPrice,
             customer: {
                 name: "WB",
                 adress: {
